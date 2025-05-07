@@ -53,17 +53,18 @@ HybridsNews is a dynamic website showcasing campus blogs, featuring updates on p
 
 ```plaintext
 └──hybridsnews/
-    ├── README.md               # Project documentation
-    ├── LICENSE                 # Apache License 2.0
-    ├── index.css               # Main stylesheet
-    ├── index.html              # Main HTML file
-    ├── page1.js                # JavaScript for interactivity
-    ├── politics.css            # Styles for politics page
-    ├── politics.html           # Politics page content
-    ├── script.js               # Additional JavaScript
-    ├── sports.css              # Styles for sports page
-    ├── sports.html             # Sports page content
-    └── images/                 # Assets directory
+   ├── README.md               # Project documentation
+   ├── LICENSE                 # Apache License 2.0
+   ├── .gitignore              # Specifies files and directories to ignore in Git
+   ├── index.css               # Main stylesheet
+   ├── index.html              # Main HTML file
+   ├── page1.js                # JavaScript for interactivity
+   ├── politics.css            # Styles for politics page
+   ├── politics.html           # Politics page content
+   ├── script.js               # Additional JavaScript
+   ├── sports.css              # Styles for sports page
+   ├── sports.html             # Sports page content
+   └── images/                 # Assets directory
 ```
 
 ## Usage
