@@ -76,10 +76,6 @@ HybridsNews is a dynamic website showcasing campus blogs, featuring updates on p
 
 We welcome contributions to improve Hybrids News!
 
-## 📜License
-
-This project is licensed under the Apache License 2.0. See the [LICENSE](./LICENSE) file for details.
-
 ## License
 
 This project is licensed under the Apache License 2.0. See the [LICENSE](./LICENSE) file for details.
