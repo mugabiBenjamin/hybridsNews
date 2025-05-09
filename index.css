@@ -214,6 +214,7 @@ header {
 /* Hero section */
 .hero {
   background: var(--background-primary);
+  position: relative;
 }
 
 .hero .container {
@@ -246,11 +247,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .hero .img-box {
   position: absolute;
-  z-index: 999;
+  z-index: 1;
 }
 
 /* Main section */
