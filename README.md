@@ -38,7 +38,8 @@ HybridsNews is a dynamic website showcasing campus blogs, featuring updates on p
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/hybrids-news.git
+   git clone https://github.com/mugabiBenjamin/hybridsNews.git
+   cd hybridsNews/
    ```
 
 2. Navigate to the project directory:
@@ -93,7 +94,7 @@ This project is licensed under the Apache License 2.0. See the [LICENSE](./LICEN
 
 For more inquires or support'
 
-- Create an [Issue](https://github.com/Altech001/hybridsnews/issues)
+- Create an [Issue](https://github.com/mugabiBenjamin/hybridsNews/issues)
 
 ## Future Enhancements
 
