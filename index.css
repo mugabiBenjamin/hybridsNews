@@ -192,10 +192,9 @@ header {
 }
 
 .active-nav {
-  border: 2px solid var(--accent);
-  padding: 10px;
-  border-radius: 50px;
   color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 4px;
 }
 
 .theme-btn-desktop {
