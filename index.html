@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hybrid News</title>
+  <meta name="description" content="Hybrid University news portal featuring campus updates, sports, and events">
   <!-- - favicon -->
-  <link rel="shortcut icon" href="../images/Hybrids_university.png" />
+  <link rel="shortcut icon" href="../images/Hybrids_university.png" alt="Hybrid University logo" />
 
   <!-- custom css link -->
   <link rel="stylesheet" href="./index.css" />
@@ -22,162 +23,81 @@
 <body class="light-theme">
 
   <!-- Header -->
-  <header>
+  <header role="banner">
     <div class="container">
-      <nav class="navbar">
-        <a href="index.html"><img src="../images/Hybrids_university.png" alt="school log" width="100" /></a>
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="index.html"><img src="../images/Hybrids_university.png" alt="Hybrid University logo" width="100" /></a>
 
-        <div class="btn-group">
-          <button class="theme-btn theme-btn-mobile light">
-            <ion-icon name="moon" class="moon"></ion-icon>
-            <ion-icon name="sunny" class="sun"></ion-icon>
-          </button>
-
-          <button class="nav-menu-btn">
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-        </div>
-
-        <!-- Navigation links -->
         <div class="flex-wrapper">
-          <ul class="desktop-nav" id="myDIV">
+          <ul class="desktop-nav" id="main-nav">
             <li>
-              <a href="./" class="nav-link active-nav">Home</a>
+              <a href="./" class="nav-link active-nav" aria-current="page">Home</a>
             </li>
             <li>
               <a href="politics.html" class="nav-link">Politics</a>
             </li>
             <li>
-              <a href="sports.html" class=" nav-link">Sports</a>
+              <a href="sports.html" class="nav-link">Sports</a>
             </li>
           </ul>
 
-          <!-- Theme button -->
-          <button class="theme-btn theme-btn-desktop light">
+          <button class="theme-btn theme-btn-desktop light" aria-label="Join us">
             BE PART
           </button>
-        </div>
-
-        <div class="mobile-nav">
-          <button class="nav-close-btn">
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-
-          <div class="wrapper">
-            <p class="h3 nav-title">Main Menu</p>
-
-            <ul id="myDIV">
-              <li class="nav-item">
-                <a href="/html/index.html" class="nav-link active-nav">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="./politics.html" class="nav-link">Politics</a>
-              </li>
-              <li class="nav-item">
-                <a href="./" class="nav-link">Campus Breeze</a>
-              </li>
-              <li class="nav-item">
-                <a href="./sports.html" class="nav-link">Sports</a>
-              </li>
-
-            </ul>
-          </div>
-
-          <!-- Aside in mobile view -->
-          <div>
-            <p class="h3 nav-title">Topics</p>
-
-            <ul id="myDIV">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Events Updates</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Campus Vibes</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Commentaries</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Sports Updates</a>
-              </li>
-            </ul>
-          </div>
-
         </div>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main role="main">
     <div class="hero">
       <div class="container">
         <div class="left">
-          <div class="boxcard">
+          <div class="boxcard" role="region" aria-label="Featured tweets">
             <div class="card1">
-              <!-- <img src="/images/blog-3.png" alt="here" width="200px" height="250px"> -->
               <iframe
                 src="https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideCard=false&hideThread=false&id=1779905328454287392&lang=en&origin=https%3A%2F%2Fvu.ac.ug%2F&sessionId=44fd1d69a47b10eb06c269191a938a626bad1992&theme=light&widgetsVersion=2615f7e52b7e0%3A1702314776716&width=550px"
-                scrolling="no" frameborder="0" width="250px" height="350px"></iframe>
+                scrolling="no" frameborder="0" width="250px" height="350px" title="Hybrid University tweet"></iframe>
             </div>
             <div class="card1">
-              <!-- <img src="/images/blog-3.png" alt="here" width="200px" height="250px"> -->
               <iframe
                 src="https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-22&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideCard=false&hideThread=false&id=1688550693441781766&lang=en&origin=https%3A%2F%2Fvu.ac.ug%2F&sessionId=774071b0e59514a25b834aade02901365c0125db&theme=light&widgetsVersion=2615f7e52b7e0%3A1702314776716&width=550px"
-                scrolling="no" frameborder="0" width="250px" height="350px"></iframe>
+                scrolling="no" frameborder="0" width="250px" height="350px" title="Hybrid University tweet"></iframe>
             </div>
             <div class="card1">
               <iframe
-                src="https://platform.twitter.com/embed/Tweet.html?
-                dnt=false&embedId=twitter-widget-21&features=eyJ0ZndfdGltZWxpb
-                mVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2N
-                vdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRf
-                ZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzc
-                mNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29m
-                dF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSw
-                idGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm5
-                1bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwL
-                CJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2t
-                ldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6
-                eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW
-                5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWF
-                uaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN
-                5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9
-                udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideCard=false&hideThrea
-                d=false&id=1745547313852928505&lang=en&origin=https%3A%2F%2Fvu.ac.ug%2F&sessionId=774071b0e59514a25b834aade02901365c0125db&theme=light&widgetsVersion=2615f7e52b7e0%3A1702314776716&width=550px"
-                frameborder="0" scrolling="no" width="250px" height="350px"></iframe>
-              <!-- <img src="https://online.fliphtml5.com/bbpnh/chjf/index.html#p=17 " alt="here" width="200px" height="250px" > -->
+                src="https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-21&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideCard=false&hideThread=false&id=1745547313852928505&lang=en&origin=https%3A%2F%2Fvu.ac.ug%2F&sessionId=774071b0e59514a25b834aade02901365c0125db&theme=light&widgetsVersion=2615f7e52b7e0%3A1702314776716&width=550px"
+                frameborder="0" scrolling="no" width="250px" height="350px" title="Hybrid University tweet"></iframe>
             </div>
           </div>
-
         </div>
 
         <div class="right">
-
-          <div class="pattern-bg"></div>
+          <div class="pattern-bg" role="presentation"></div>
           <div class="img-box">
-            <iframe src="https://online.fliphtml5.com/bbpnh/chjf/index.html#p=17 " width="460px"
-              style="align-self: center;" frameborder="0" height="350px"></iframe>
+            <iframe src="https://online.fliphtml5.com/bbpnh/chjf/index.html#p=17" width="460px" height="350px"
+              title="Hybrid University magazine" style="align-self: center;" frameborder="0"></iframe>
           </div>
         </div>
-
       </div>
     </div>
+
     <div class="container">
       <div class="main">
         <div class="container">
           <!--- BLOG SECTION --->
-
-          <div class="blog">
+          <div class="blog" role="region" aria-label="Latest news">
             <h2 class="h2">Latest Blog Posts</h2>
 
             <div class="blog-card-group">
-              <div class="blog-card">
+              <article class="blog-card" role="article">
                 <div class="blog-card-banner">
-                  <img src="../images/tribute.jpg" alt="" width="250" class="blog-banner-img" />
+                  <img src="../images/tribute.jpg" alt="Dr. Martin Aliker portrait" width="250"
+                    class="blog-banner-img" />
                 </div>
 
                 <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Tribute</button>
+                  <span class="blog-topic text-tiny">Tribute</span>
 
                   <h3>
                     <a href="#" class="h3">
@@ -192,7 +112,7 @@
 
                   <div class="wrapper-flex">
                     <div class="profile-wrapper">
-                      <img src="../images/Hybrids_university.png" alt="Hybrids" width="30" />
+                      <img src="../images/Hybrids_university.png" alt="Hybrid University logo" width="30" />
                     </div>
 
                     <div class="wrapper">
@@ -201,21 +121,22 @@
                       <p class="text-sm">
                         <time datetime="2025-05-22">May 22, 2025</time>
                         <span class="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                         <time datetime="PT3M">3 min</time>
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
 
-              <div class="blog-card">
+              <article class="blog-card" role="article">
                 <div class="blog-card-banner">
-                  <img src="../images/img3.jpeg" alt="" width="250" class="blog-banner-img" />
+                  <img src="../images/img3.jpeg" alt="Football match between Hybrid and Victoria University" width="250"
+                    class="blog-banner-img" />
                 </div>
 
                 <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Sports</button>
+                  <span class="blog-topic text-tiny">Sports</span>
 
                   <h3>
                     <a href="" class="h3">The match between Hybrid University and Victoria University</a>
@@ -228,7 +149,7 @@
 
                   <div class="wrapper-flex">
                     <div class="profile-wrapper">
-                      <img src="../images/Hybrids_university.png" alt="Hybrids" width="30" />
+                      <img src="../images/Hybrids_university.png" alt="Hybrid University logo" width="30" />
                     </div>
 
                     <div class="wrapper">
@@ -237,21 +158,22 @@
                       <p class="text-sm">
                         <time datetime="2025-04-31">April 31, 2025</time>
                         <span class="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                         <time datetime="PT2M">2 min</time>
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
 
-              <div class="blog-card">
+              <article class="blog-card" role="article">
                 <div class="blog-card-banner">
-                  <img src="../images/orient.JPG" alt="" width="250" class="blog-banner-img" />
+                  <img src="../images/orient.JPG" alt="Students during orientation" width="250"
+                    class="blog-banner-img" />
                 </div>
 
                 <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Orientation</button>
+                  <span class="blog-topic text-tiny">Orientation</span>
 
                   <h3>
                     <a href="" class="h3">Orientation for the new Students.</a>
@@ -264,7 +186,7 @@
 
                   <div class="wrapper-flex">
                     <div class="profile-wrapper">
-                      <img src="../images/Hybrids_university.png" alt="Hybrids" width="30" />
+                      <img src="../images/Hybrids_university.png" alt="Hybrid University logo" width="30" />
                     </div>
 
                     <div class="wrapper">
@@ -273,21 +195,22 @@
                       <p class="text-sm">
                         <time datetime="2025-04-28">April 28, 2025</time>
                         <span class="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                         <time datetime="PT4M">4 min</time>
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
 
-              <div class="blog-card">
+              <article class="blog-card" role="article">
                 <div class="blog-card-banner">
-                  <img src="../images/commentaries.jpeg" alt="" width="250" class="blog-banner-img" />
+                  <img src="../images/commentaries.jpeg" alt="Graduation ceremony" width="250"
+                    class="blog-banner-img" />
                 </div>
 
                 <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Commentaries</button>
+                  <span class="blog-topic text-tiny">Commentaries</span>
 
                   <h3>
                     <a href="" class="h3">Dynamically Securing Your Future.</a>
@@ -301,7 +224,7 @@
 
                   <div class="wrapper-flex">
                     <div class="profile-wrapper">
-                      <img src="../images/Hybrids_university.png" alt="Hybrids" width="30" />
+                      <img src="../images/Hybrids_university.png" alt="Hybrid University logo" width="30" />
                     </div>
 
                     <div class="wrapper">
@@ -310,21 +233,21 @@
                       <p class="text-sm">
                         <time datetime="2025-04-04">April 04, 2025</time>
                         <span class="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                         <time datetime="PT4M">4 min</time>
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
 
-              <div class="blog-card">
+              <article class="blog-card" role="article">
                 <div class="blog-card-banner">
-                  <img src="../images/oreint2.jpeg" alt="" width="250" class="blog-banner-img" />
+                  <img src="../images/oreint2.jpeg" alt="University social event" width="250" class="blog-banner-img" />
                 </div>
 
                 <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny" id="sport-section">Events Updates</button>
+                  <span class="blog-topic text-tiny" id="sport-section">Events Updates</span>
 
                   <h3>
                     <a href="" class="h3">Adaptive Loading - Improving the social and political
@@ -344,7 +267,7 @@
 
                   <div class="wrapper-flex">
                     <div class="profile-wrapper">
-                      <img src="../images/Hybrids_university.png" alt="Hybrids" width="30" />
+                      <img src="../images/Hybrids_university.png" alt="Hybrid University logo" width="30" />
                     </div>
 
                     <div class="wrapper">
@@ -353,21 +276,22 @@
                       <p class="text-sm">
                         <time datetime="2025-03-17">March 17, 2025</time>
                         <span class="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                         <time datetime="PT3M">3 min</time>
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
 
-              <div class="blog-card">
+              <article class="blog-card" role="article">
                 <div class="blog-card-banner">
-                  <img src="../images/Hybrids_university.png" alt="" width="250" class="blog-banner-img" />
+                  <img src="../images/Hybrids_university.png" alt="Hybrid University campus" width="250"
+                    class="blog-banner-img" />
                 </div>
 
                 <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Campus Vibes</button>
+                  <span class="blog-topic text-tiny">Campus Vibes</span>
 
                   <h3>
                     <a href="" class="h3">Don't Develop Just for Yourself - A Developer's Checklist
@@ -384,7 +308,7 @@
 
                   <div class="wrapper-flex">
                     <div class="profile-wrapper">
-                      <img src="../images/Hybrids_university.png" alt="Hybrids" width="30" />
+                      <img src="../images/Hybrids_university.png" alt="Hybrid University logo" width="30" />
                     </div>
 
                     <div class="wrapper">
@@ -393,21 +317,21 @@
                       <p class="text-sm">
                         <time datetime="2025-03-02">March 02, 2025</time>
                         <span class="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                         <time datetime="PT7M">7 min</time>
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
 
-              <div class="blog-card">
+              <article class="blog-card" role="article">
                 <div class="blog-card-banner">
-                  <img src="../images/radio1.jpeg" alt="" width="250" class="blog-banner-img" />
+                  <img src="../images/radio1.jpeg" alt="Hybrid Radio studio" width="250" class="blog-banner-img" />
                 </div>
 
                 <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Hybrid Radio</button>
+                  <span class="blog-topic text-tiny">Hybrid Radio</span>
 
                   <h3>
                     <a href="" class="h3">Merging the learning to the pratcial stuff.</a>
@@ -421,7 +345,7 @@
 
                   <div class="wrapper-flex">
                     <div class="profile-wrapper">
-                      <img src="../images/Hybrids_university.png" alt="Hybrids" width="30" />
+                      <img src="../images/Hybrids_university.png" alt="Hybrid University logo" width="30" />
                     </div>
 
                     <div class="wrapper">
@@ -430,21 +354,21 @@
                       <p class="text-sm">
                         <time datetime="2025-02-15">February 15, 2025</time>
                         <span class="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                         <time datetime="PT5M">5 min</time>
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
 
-              <div class="blog-card">
+              <article class="blog-card" role="article">
                 <div class="blog-card-banner">
-                  <img src="../images/event1.jpg" alt="" width="250" class="blog-banner-img" />
+                  <img src="../images/event1.jpg" alt="University event" width="250" class="blog-banner-img" />
                 </div>
 
                 <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Commiunties</button>
+                  <span class="blog-topic text-tiny">Commiunties</span>
 
                   <h3>
                     <a href="" class="h3">The Grand Launch of E-ChatBots</a>
@@ -459,7 +383,7 @@
 
                   <div class="wrapper-flex">
                     <div class="profile-wrapper">
-                      <img src="../images/Hybrids_university.png" alt="Hybrids" width="30" />
+                      <img src="../images/Hybrids_university.png" alt="Hybrid University logo" width="30" />
                     </div>
 
                     <div class="wrapper">
@@ -468,21 +392,21 @@
                       <p class="text-sm">
                         <time datetime="2025-01-21">January 21, 2025</time>
                         <span class="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                         <time datetime="PT7M">8 min</time>
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
 
-              <div class="blog-card">
+              <article class="blog-card" role="article">
                 <div class="blog-card-banner">
-                  <img src="../images/event1.jpg" alt="" width="250" class="blog-banner-img" />
+                  <img src="../images/event1.jpg" alt="Staff gathering" width="250" class="blog-banner-img" />
                 </div>
 
                 <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Staff Gathering</button>
+                  <span class="blog-topic text-tiny">Staff Gathering</span>
 
                   <h3>
                     <a href="" class="h3">The Gathering of the Staff Members at Hybrid Auditorium.</a>
@@ -496,7 +420,7 @@
 
                   <div class="wrapper-flex">
                     <div class="profile-wrapper">
-                      <img src="../images/Hybrids_university.png" alt="Hybrids" width="30" />
+                      <img src="../images/Hybrids_university.png" alt="Hybrid University logo" width="30" />
                     </div>
 
                     <div class="wrapper">
@@ -505,16 +429,16 @@
                       <p class="text-sm">
                         <time datetime="2025-01-13">January 13, 2025</time>
                         <span class="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                         <time datetime="PT4M">4 min</time>
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
             </div>
 
-            <button class="btn load-more">
+            <button class="btn load-more" aria-label="Load more articles">
               <div class="loader">
                 <div class="loading one"></div>
                 <div class="loading two"></div>
@@ -525,33 +449,30 @@
             </button>
           </div>
 
-          <!--
-          - ASIDE
-        -->
-
-          <div class="aside">
+          <!-- ASIDE -->
+          <aside class="aside" role="complementary">
             <div class="topics">
               <h2 class="h2">Topics</h2>
 
-              <a href="#" class="topic-btn">
+              <a href="#" class="topic-btn" aria-label="Events updates">
                 <div class="icon-box">
-                  <ion-icon name="server-outline"></ion-icon>
+                  <ion-icon name="server-outline" aria-hidden="true"></ion-icon>
                 </div>
 
                 <p>Events Updates</p>
               </a>
 
-              <a href="#" class="topic-btn">
+              <a href="#" class="topic-btn" aria-label="Campus vibes">
                 <div class="icon-box">
-                  <ion-icon name="accessibility-outline"></ion-icon>
+                  <ion-icon name="accessibility-outline" aria-hidden="true"></ion-icon>
                 </div>
 
                 <p>Campus Vibes</p>
               </a>
 
-              <a href="#" class="topic-btn">
+              <a href="#" class="topic-btn" aria-label="Commentaries">
                 <div class="icon-box">
-                  <ion-icon name="rocket-outline"></ion-icon>
+                  <ion-icon name="rocket-outline" aria-hidden="true"></ion-icon>
                 </div>
 
                 <p>Commentaries</p>
@@ -562,15 +483,15 @@
               <h2 class="h2">Tags</h2>
 
               <div class="wrapper">
-                <button class="hashtag">#Altech</button>
-                <button class="hashtag">#Benja</button>
-                <button class="hashtag">#Jewels</button>
-                <button class="hashtag">#Odong</button>
-                <button class="hashtag">#Vin</button>
-                <button class="hashtag">#Marvin</button>
-                <button class="hashtag">#Praise</button>
-                <button class="hashtag">#Monica</button>
-                <button class="hashtag">#10th</button>
+                <button class="hashtag" aria-label="Altech tag">#Altech</button>
+                <button class="hashtag" aria-label="Benja tag">#Benja</button>
+                <button class="hashtag" aria-label="Jewels tag">#Jewels</button>
+                <button class="hashtag" aria-label="Odong tag">#Odong</button>
+                <button class="hashtag" aria-label="Vin tag">#Vin</button>
+                <button class="hashtag" aria-label="Marvin tag">#Marvin</button>
+                <button class="hashtag" aria-label="Praise tag">#Praise</button>
+                <button class="hashtag" aria-label="Monica tag">#Monica</button>
+                <button class="hashtag" aria-label="10th tag">#10th</button>
               </div>
             </div>
 
@@ -585,20 +506,20 @@
 
                 <ul class="social-link">
                   <li>
-                    <a href="#" class="icon-box discord">
-                      <ion-icon name="logo-discord"></ion-icon>
+                    <a href="#" class="icon-box discord" aria-label="Hybrid University Discord">
+                      <ion-icon name="logo-discord" aria-hidden="true"></ion-icon>
                     </a>
                   </li>
 
                   <li>
-                    <a href="#" class="icon-box twitter">
-                      <ion-icon name="logo-twitter"></ion-icon>
+                    <a href="#" class="icon-box twitter" aria-label="Hybrid University Twitter">
+                      <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
                     </a>
                   </li>
 
                   <li>
-                    <a href="#" class="icon-box facebook">
-                      <ion-icon name="logo-facebook"></ion-icon>
+                    <a href="#" class="icon-box facebook" aria-label="Hybrid University Facebook">
+                      <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
                     </a>
                   </li>
                 </ul>
@@ -614,37 +535,32 @@
                   with the latest updates.
                 </p>
 
-                <form action="https://api.web3forms.com/submit" method="POST">
-                  <!-- FOR API KEY USED  -->
+                <form action="https://api.web3forms.com/submit" method="POST" role="form"
+                  aria-label="Newsletter subscription form">
                   <input type="hidden" name="access_key" value="17c0673b-8565-4e50-8aa5-e80b2bb53edb">
-                  <!-- FOR API KEY USED  -->
-                  <input type="email" name="email" placeholder="Email Address" required />
-                  <input type="text" name="message
-                " placeholder="Write Feedback ....." id="" />
+                  <input type="email" name="email" placeholder="Email Address" required
+                    aria-label="Your email address" />
+                  <input type="text" name="message" placeholder="Write Feedback ....." aria-label="Your feedback" />
                   <input type="hidden" name="redirect" value="https://web3forms.com/success">
                   <div class="h-captcha" data-captcha="true"></div>
-                  <button type="submit" class="btn btn-primary">
+                  <button type="submit" class="btn btn-primary" aria-label="Submit form">
                     Submit
                   </button>
                 </form>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
+    </div>
   </main>
 
-  <!--
-    - #FOOTER
-  -->
-
-  <footer>
+  <!-- FOOTER -->
+  <footer role="contentinfo">
     <div class="container">
       <div class="wrapper">
         <a href="#" class="footer-logo">
-          <img src="../images/Hybrids_university.png" alt="Hybrids logo" width="80" class="logo-light" />
-
-          <img src="../images/Hybrids_university.png" alt="Hybrids logo" width="80" class="logo-dark" />
+          <img src="../images/Hybrids_university.png" alt="Hybrid University logo" width="80" />
         </a>
 
         <p class="footer-text">
@@ -652,12 +568,11 @@
         </p>
       </div>
 
-
       <div class="wrapper">
-        <p class="footer-title"></p>
+        <p class="footer-title">Quick Links</p>
         <ul>
           <li class="footer-text">
-            <input type="button" value="Send Us Message">
+            <input type="button" value="Send Us Message" aria-label="Send us a message">
           </li>
         </ul>
       </div>
@@ -667,11 +582,11 @@
         <ul style="display: grid;">
           <li>
             <span>Send us an email at </span>
-            <a href="#" class="footer-link" target="_blank">info@hu.ac.ug</a>
+            <a href="mailto:info@hu.ac.ug" class="footer-link" target="_blank">info@hu.ac.ug</a>
           </li>
           <li>
             <span>Admissions & Registry</span>
-            <a href="#" class="footer-link">admissions@hu.ac.ug</a>
+            <a href="mailto:admissions@hu.ac.ug" class="footer-link">admissions@hu.ac.ug</a>
           </li>
         </ul>
       </div>
@@ -679,7 +594,7 @@
       <div class="footer-text1">
         <p>
           Hybrids University, the home to limitless
-          opportunities. Leave behind what’s familiar
+          opportunities. Leave behind what's familiar
           and step into a world of endless possibilities
           that define: Who you are, your aspirations,
           how you impact your community, the country and
@@ -687,7 +602,6 @@
         </p>
         <a href="#">
           Located in Kampala road</a>
-
       </div>
     </div>
 
